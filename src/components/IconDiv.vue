@@ -1,14 +1,26 @@
-<template>
-    <div class="mb-3 text-center">
-        <div :class="`flex justify-center items-center rounded-lg p-2 ${!title && 'bg-white/20'}`">
-        <span v-html="icon"></span>
-    </div>
-    <p class="text-xs">{{ title }}</p>
-    </div>
-</template>
-
-
 <script setup lang="ts">
-defineProps<{icon: string,title: string;}>();
+import type { Component, PropType } from 'vue';
+
+defineProps({
+  labelIcon: {
+    type: Object as PropType<Component>,
+    required: false,
+  },
+  
+  title:String,
+});
+
+
 </script>
 
+<template>
+  <div class="mb-3 text-center">
+    <div
+      class="flex justify-center items-center rounded-lg p-3"
+    >
+    <component v-if="labelIcon" :is="labelIcon"/>
+
+    </div>
+    <p class="text-xs">{{ title }}</p>
+  </div>
+</template>
