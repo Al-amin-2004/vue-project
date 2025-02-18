@@ -1,6 +1,6 @@
 <template>
   <div id="app" class=" h-screen bg-black">
-    <Sidebar title="My First Sidebar!"/>
+    <Sidebar/>
   </div>
   
 </template>
