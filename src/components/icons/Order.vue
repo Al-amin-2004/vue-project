@@ -16,9 +16,7 @@ defineProps<{ className?: string }>();
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth="2"
-      d="M15.796 15.811 21 21m-3-10.5a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0"
+      d="m3.5 13-.204-.952C2.629 8.935 5.002 6 8.185 6H19m0 0-3 3m3-3-3-3m4.5 8 .204.952C21.371 15.065 18.998 18 15.815 18H5m0 0 3-3m-3 3 3 3"
     />
-    </svg>
+  </svg>
 </template>
-
-
