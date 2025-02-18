@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { SidebarDatas } from "./data/data";
 import Search from "./icons/Search.vue";
 import Link from "./icons/Link.vue";
-import { SidebarDatas } from "./data/data";
 import Gear from "./icons/Gear.vue";
 import User from "./icons/User.vue";
 import { ref } from "vue";
@@ -10,7 +10,7 @@ import { ref } from "vue";
 
 let active = ref<number>(1);
 
-function MyFunc(idx:number) {
+function MyFunc(idx:number):void {
   active.value = idx;
 }
 </script>
